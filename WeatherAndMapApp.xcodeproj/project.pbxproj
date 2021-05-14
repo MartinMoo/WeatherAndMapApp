@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3627876264F0ECF001A2850 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3627875264F0ECF001A2850 /* LocationService.swift */; };
 		F3D8B04F264EB24400740D42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B04E264EB24400740D42 /* AppDelegate.swift */; };
 		F3D8B051264EB24400740D42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B050264EB24400740D42 /* SceneDelegate.swift */; };
 		F3D8B053264EB24400740D42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B052264EB24400740D42 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F3627875264F0ECF001A2850 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		F3D8B04B264EB24400740D42 /* WeatherAndMapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAndMapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D8B04E264EB24400740D42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3D8B050264EB24400740D42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		F3D8B068264EB2A200740D42 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				F3627875264F0ECF001A2850 /* LocationService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				F3D8B06A264EB30000740D42 /* TabBarController.swift in Sources */,
 				F3D8B08B264EB99800740D42 /* LocalizationExtension.swift in Sources */,
 				F3D8B04F264EB24400740D42 /* AppDelegate.swift in Sources */,
+				F3627876264F0ECF001A2850 /* LocationService.swift in Sources */,
 				F3D8B088264EB96B00740D42 /* LocalizableConstants.swift in Sources */,
 				F3D8B070264EB52F00740D42 /* MapViewController.swift in Sources */,
 				F3D8B051264EB24400740D42 /* SceneDelegate.swift in Sources */,

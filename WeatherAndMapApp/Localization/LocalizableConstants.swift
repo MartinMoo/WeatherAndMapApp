@@ -13,4 +13,16 @@ struct Localize {
         static let Search = "TabBar.Search".localized();
         static let Favorites = "TabBar.Favorites".localized();
     }
+    struct Map {
+        static let Standard = "Map.Standard".localized();
+        static let Satellite = "Map.Satellite".localized();
+    }
+    struct Alert {
+        static let Ok = "Alert.Ok".localized();
+        static let UpdateSettings = "Alert.UpdateSettings".localized();
+        struct Location {
+            static let Title = "Alert.Location.Title".localized();
+            static let Message = "Alert.Location.Message".localized();
+        }
+    }
 }
