@@ -18,6 +18,9 @@
 		F3D8B073264EB55600740D42 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B072264EB55600740D42 /* SearchViewController.swift */; };
 		F3D8B076264EB57A00740D42 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B075264EB57A00740D42 /* FavoritesViewController.swift */; };
 		F3D8B07A264EB60600740D42 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B079264EB60600740D42 /* UIExtension.swift */; };
+		F3D8B081264EB91600740D42 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3D8B083264EB91600740D42 /* Localizable.strings */; };
+		F3D8B088264EB96B00740D42 /* LocalizableConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B087264EB96B00740D42 /* LocalizableConstants.swift */; };
+		F3D8B08B264EB99800740D42 /* LocalizationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B08A264EB99800740D42 /* LocalizationExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,10 @@
 		F3D8B072264EB55600740D42 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		F3D8B075264EB57A00740D42 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		F3D8B079264EB60600740D42 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		F3D8B082264EB91600740D42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F3D8B085264EB92C00740D42 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F3D8B087264EB96B00740D42 /* LocalizableConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableConstants.swift; sourceTree = "<group>"; };
+		F3D8B08A264EB99800740D42 /* LocalizationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +73,7 @@
 		F3D8B04D264EB24400740D42 /* WeatherAndMapApp */ = {
 			isa = PBXGroup;
 			children = (
+				F3D8B07F264EB8F500740D42 /* Localization */,
 				F3D8B078264EB5EB00740D42 /* Extension */,
 				F3D8B068264EB2A200740D42 /* Service */,
 				F3D8B067264EB29400740D42 /* Controller */,
@@ -118,8 +126,18 @@
 			isa = PBXGroup;
 			children = (
 				F3D8B079264EB60600740D42 /* UIExtension.swift */,
+				F3D8B08A264EB99800740D42 /* LocalizationExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		F3D8B07F264EB8F500740D42 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				F3D8B083264EB91600740D42 /* Localizable.strings */,
+				F3D8B087264EB96B00740D42 /* LocalizableConstants.swift */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +181,7 @@
 			knownRegions = (
 				en,
 				Base,
+				sk,
 			);
 			mainGroup = F3D8B042264EB24400740D42;
 			productRefGroup = F3D8B04C264EB24400740D42 /* Products */;
@@ -180,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3D8B05B264EB24500740D42 /* LaunchScreen.storyboard in Resources */,
+				F3D8B081264EB91600740D42 /* Localizable.strings in Resources */,
 				F3D8B058264EB24500740D42 /* Assets.xcassets in Resources */,
 				F3D8B056264EB24400740D42 /* Main.storyboard in Resources */,
 			);
@@ -196,7 +216,9 @@
 				F3D8B053264EB24400740D42 /* ViewController.swift in Sources */,
 				F3D8B076264EB57A00740D42 /* FavoritesViewController.swift in Sources */,
 				F3D8B06A264EB30000740D42 /* TabBarController.swift in Sources */,
+				F3D8B08B264EB99800740D42 /* LocalizationExtension.swift in Sources */,
 				F3D8B04F264EB24400740D42 /* AppDelegate.swift in Sources */,
+				F3D8B088264EB96B00740D42 /* LocalizableConstants.swift in Sources */,
 				F3D8B070264EB52F00740D42 /* MapViewController.swift in Sources */,
 				F3D8B051264EB24400740D42 /* SceneDelegate.swift in Sources */,
 				F3D8B07A264EB60600740D42 /* UIExtension.swift in Sources */,
@@ -222,6 +244,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		F3D8B083264EB91600740D42 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3D8B082264EB91600740D42 /* en */,
+				F3D8B085264EB92C00740D42 /* sk */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -229,6 +260,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -290,6 +322,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

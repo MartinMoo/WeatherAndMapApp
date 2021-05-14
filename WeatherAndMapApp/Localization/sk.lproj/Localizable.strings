@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  WeatherAndMapApp
+
+  Created by Moo Maa on 14/05/2021.
+  
+*/
+
+"TabBar.Map" = "Mapa";
+"TabBar.Search" = "Hľadať";
+"TabBar.Favorites" = "Obľúbené";

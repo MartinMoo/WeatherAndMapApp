@@ -52,9 +52,9 @@ class TabBarController: UITabBarController {
         UINavigationBar.appearance().prefersLargeTitles = true
         
         // TabBar items/buttons setup
-        navMapController.tabBarItem = UITabBarItem(title: "Map", image: mapSymbol, selectedImage: mapSymbol?.withTintColor(UIColor.Custom.purple!))
-        navSearchController.tabBarItem = UITabBarItem(title: "Search", image: searchSymbol, selectedImage: searchSymbol?.withTintColor(UIColor.Custom.purple!))
-        navFavoritesController.tabBarItem = UITabBarItem(title: "Favorites", image: starSymbol, selectedImage: starSymbol?.withTintColor(UIColor.Custom.purple!))
+        navMapController.tabBarItem = UITabBarItem(title: Localize.TabBar.Map, image: mapSymbol, selectedImage: mapSymbol?.withTintColor(UIColor.Custom.purple!))
+        navSearchController.tabBarItem = UITabBarItem(title: Localize.TabBar.Search, image: searchSymbol, selectedImage: searchSymbol?.withTintColor(UIColor.Custom.purple!))
+        navFavoritesController.tabBarItem = UITabBarItem(title: Localize.TabBar.Favorites, image: starSymbol, selectedImage: starSymbol?.withTintColor(UIColor.Custom.purple!))
 
         // Add items to TabBar
         let tabBarList = [navMapController,navSearchController,navFavoritesController]
