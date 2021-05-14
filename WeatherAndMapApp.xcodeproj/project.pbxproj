@@ -13,6 +13,11 @@
 		F3D8B056264EB24400740D42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D8B054264EB24400740D42 /* Main.storyboard */; };
 		F3D8B058264EB24500740D42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D8B057264EB24500740D42 /* Assets.xcassets */; };
 		F3D8B05B264EB24500740D42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D8B059264EB24500740D42 /* LaunchScreen.storyboard */; };
+		F3D8B06A264EB30000740D42 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B069264EB30000740D42 /* TabBarController.swift */; };
+		F3D8B070264EB52F00740D42 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B06F264EB52F00740D42 /* MapViewController.swift */; };
+		F3D8B073264EB55600740D42 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B072264EB55600740D42 /* SearchViewController.swift */; };
+		F3D8B076264EB57A00740D42 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B075264EB57A00740D42 /* FavoritesViewController.swift */; };
+		F3D8B07A264EB60600740D42 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B079264EB60600740D42 /* UIExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		F3D8B057264EB24500740D42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3D8B05A264EB24500740D42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3D8B05C264EB24500740D42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3D8B069264EB30000740D42 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F3D8B06F264EB52F00740D42 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F3D8B072264EB55600740D42 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		F3D8B075264EB57A00740D42 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		F3D8B079264EB60600740D42 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,11 @@
 		F3D8B04D264EB24400740D42 /* WeatherAndMapApp */ = {
 			isa = PBXGroup;
 			children = (
+				F3D8B078264EB5EB00740D42 /* Extension */,
+				F3D8B068264EB2A200740D42 /* Service */,
+				F3D8B067264EB29400740D42 /* Controller */,
+				F3D8B066264EB28F00740D42 /* View */,
+				F3D8B065264EB28900740D42 /* Model */,
 				F3D8B04E264EB24400740D42 /* AppDelegate.swift */,
 				F3D8B050264EB24400740D42 /* SceneDelegate.swift */,
 				F3D8B052264EB24400740D42 /* ViewController.swift */,
@@ -65,6 +80,46 @@
 				F3D8B05C264EB24500740D42 /* Info.plist */,
 			);
 			path = WeatherAndMapApp;
+			sourceTree = "<group>";
+		};
+		F3D8B065264EB28900740D42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F3D8B066264EB28F00740D42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3D8B067264EB29400740D42 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3D8B069264EB30000740D42 /* TabBarController.swift */,
+				F3D8B06F264EB52F00740D42 /* MapViewController.swift */,
+				F3D8B072264EB55600740D42 /* SearchViewController.swift */,
+				F3D8B075264EB57A00740D42 /* FavoritesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F3D8B068264EB2A200740D42 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F3D8B078264EB5EB00740D42 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F3D8B079264EB60600740D42 /* UIExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +192,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D8B073264EB55600740D42 /* SearchViewController.swift in Sources */,
 				F3D8B053264EB24400740D42 /* ViewController.swift in Sources */,
+				F3D8B076264EB57A00740D42 /* FavoritesViewController.swift in Sources */,
+				F3D8B06A264EB30000740D42 /* TabBarController.swift in Sources */,
 				F3D8B04F264EB24400740D42 /* AppDelegate.swift in Sources */,
+				F3D8B070264EB52F00740D42 /* MapViewController.swift in Sources */,
 				F3D8B051264EB24400740D42 /* SceneDelegate.swift in Sources */,
+				F3D8B07A264EB60600740D42 /* UIExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +276,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,6 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M67X2W36KY;
 				INFOPLIST_FILE = WeatherAndMapApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +369,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M67X2W36KY;
 				INFOPLIST_FILE = WeatherAndMapApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

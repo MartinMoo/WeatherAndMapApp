@@ -10,10 +10,15 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let tabBarController = TabBarController()
+        window = UIWindow()
+        window?.makeKeyAndVisible()
+        window?.rootViewController = tabBarController
+        window?.backgroundColor = .systemBackground
+        
         return true
     }
 
