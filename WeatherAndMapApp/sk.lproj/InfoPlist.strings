@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  WeatherAndMapApp
+
+  Created by Moo Maa on 14/05/2021.
+  
+*/
+
+NSLocationAlwaysAndWhenInUseUsageDescription = "WeatherAndMapApp potrebuje povolenie Lokalizačných služieb na určenie vašej polohy.";
+NSLocationWhenInUseUsageDescription = "WeatherAndMapApp potrebuje povolenie Lokalizačných služieb na určenie vašej polohy.";

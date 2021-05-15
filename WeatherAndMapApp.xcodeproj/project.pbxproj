@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		F3627876264F0ECF001A2850 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3627875264F0ECF001A2850 /* LocationService.swift */; };
+		F3627880264F14CC001A2850 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F362787E264F14CC001A2850 /* InfoPlist.strings */; };
+		F3627886264F15B1001A2850 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3627885264F15B1001A2850 /* WeatherModel.swift */; };
+		F396A1662650071D00066D84 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396A1652650071D00066D84 /* WebService.swift */; };
 		F3D8B04F264EB24400740D42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B04E264EB24400740D42 /* AppDelegate.swift */; };
 		F3D8B051264EB24400740D42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B050264EB24400740D42 /* SceneDelegate.swift */; };
-		F3D8B053264EB24400740D42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B052264EB24400740D42 /* ViewController.swift */; };
 		F3D8B056264EB24400740D42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D8B054264EB24400740D42 /* Main.storyboard */; };
 		F3D8B058264EB24500740D42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D8B057264EB24500740D42 /* Assets.xcassets */; };
 		F3D8B05B264EB24500740D42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D8B059264EB24500740D42 /* LaunchScreen.storyboard */; };
@@ -26,10 +28,14 @@
 
 /* Begin PBXFileReference section */
 		F3627875264F0ECF001A2850 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		F362787F264F14CC001A2850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F3627882264F14EB001A2850 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F3627883264F14F9001A2850 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F3627885264F15B1001A2850 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		F396A1652650071D00066D84 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		F3D8B04B264EB24400740D42 /* WeatherAndMapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAndMapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D8B04E264EB24400740D42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3D8B050264EB24400740D42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F3D8B052264EB24400740D42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F3D8B055264EB24400740D42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3D8B057264EB24500740D42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3D8B05A264EB24500740D42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -83,11 +89,11 @@
 				F3D8B065264EB28900740D42 /* Model */,
 				F3D8B04E264EB24400740D42 /* AppDelegate.swift */,
 				F3D8B050264EB24400740D42 /* SceneDelegate.swift */,
-				F3D8B052264EB24400740D42 /* ViewController.swift */,
 				F3D8B054264EB24400740D42 /* Main.storyboard */,
 				F3D8B057264EB24500740D42 /* Assets.xcassets */,
 				F3D8B059264EB24500740D42 /* LaunchScreen.storyboard */,
 				F3D8B05C264EB24500740D42 /* Info.plist */,
+				F362787E264F14CC001A2850 /* InfoPlist.strings */,
 			);
 			path = WeatherAndMapApp;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 		F3D8B065264EB28900740D42 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F3627885264F15B1001A2850 /* WeatherModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				F3627875264F0ECF001A2850 /* LocationService.swift */,
+				F396A1652650071D00066D84 /* WebService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -205,6 +213,7 @@
 				F3D8B081264EB91600740D42 /* Localizable.strings in Resources */,
 				F3D8B058264EB24500740D42 /* Assets.xcassets in Resources */,
 				F3D8B056264EB24400740D42 /* Main.storyboard in Resources */,
+				F3627880264F14CC001A2850 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,8 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F396A1662650071D00066D84 /* WebService.swift in Sources */,
 				F3D8B073264EB55600740D42 /* SearchViewController.swift in Sources */,
-				F3D8B053264EB24400740D42 /* ViewController.swift in Sources */,
 				F3D8B076264EB57A00740D42 /* FavoritesViewController.swift in Sources */,
 				F3D8B06A264EB30000740D42 /* TabBarController.swift in Sources */,
 				F3D8B08B264EB99800740D42 /* LocalizationExtension.swift in Sources */,
@@ -225,6 +234,7 @@
 				F3D8B088264EB96B00740D42 /* LocalizableConstants.swift in Sources */,
 				F3D8B070264EB52F00740D42 /* MapViewController.swift in Sources */,
 				F3D8B051264EB24400740D42 /* SceneDelegate.swift in Sources */,
+				F3627886264F15B1001A2850 /* WeatherModel.swift in Sources */,
 				F3D8B07A264EB60600740D42 /* UIExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +242,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		F362787E264F14CC001A2850 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F362787F264F14CC001A2850 /* Base */,
+				F3627882264F14EB001A2850 /* sk */,
+				F3627883264F14F9001A2850 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		F3D8B054264EB24400740D42 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

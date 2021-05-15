@@ -16,4 +16,4 @@
 "Alert.Ok" = "Ok";
 "Alert.UpdateSettings" = "Aktualizovať nastavenia";
 "Alert.Location.Title" = "Lokalizačné služby sú vypnuté";
-"Alert.Location.Message" = "WeatherApp potrebuje pre určenie Vašej polohy zapnuté Lokalizačné služby. Prosím aktualizujte nastavenie Vašich Lokalizažných služieb v Nastavenia -> Súkromie -> Lokalizačné služby.";
+"Alert.Location.Message" = "WeatherAndMapApp potrebuje pre určenie Vašej polohy zapnuté Lokalizačné služby. Prosím aktualizujte nastavenie Vašich Lokalizažných služieb v Nastavenia -> Súkromie -> Lokalizačné služby.";
