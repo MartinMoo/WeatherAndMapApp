@@ -9,29 +9,35 @@ import Foundation
 import Combine
 import CoreLocation
 
-enum ServiceError: Error {
+enum WebServiceError: Error {
     case url(URLError?)
     case decode
     case unknown(Error)
 }
 
 class WebService {
+    //MARK: - Public properties
+    static let shared = WebService()
+    
+    //MARK: - Private properties
     private let seedURL = "https://api.openweathermap.org/data/2.5/onecall?appid=ff554f01a90bb15acaa4b59c8e15462e"
-    func fetchWeather(for location: CLLocation) -> AnyPublisher<WeatherModel,ServiceError> {
+    
+    //MARK: - Public methods
+    func fetchWeather(for location: CLLocation) -> AnyPublisher<WeatherModel,WebServiceError> {
         let latitude = location.coordinate.latitude
         let longitude = location.coordinate.longitude
         let language = Locale.current.languageCode!
-        let stringURL = "\(seedURL)&lat=\(latitude)&lon=\(longitude)&lang=\(language)&exclude=minutely,hourly,alerts"
+        let stringURL = "\(seedURL)&units=metric&lat=\(latitude)&lon=\(longitude)&lang=\(language)&exclude=minutely,hourly,alerts"
         guard let url = URL(string: stringURL) else { fatalError("Invalid URL")}
 
         return URLSession.shared.dataTaskPublisher(for: url)
             .map { $0.data }
             .decode(type: WeatherModel.self, decoder: JSONDecoder())
-            .mapError { error -> ServiceError in
+            .mapError { error -> WebServiceError in
                 switch error {
-                    case is DecodingError: return ServiceError.decode
-                    case is URLError: return ServiceError.url(error as? URLError)
-                    default: return ServiceError.unknown(error)
+                    case is DecodingError: return WebServiceError.decode
+                    case is URLError: return WebServiceError.url(error as? URLError)
+                    default: return WebServiceError.unknown(error)
                 }
             }
             .receive(on: RunLoop.main)

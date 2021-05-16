@@ -10,6 +10,9 @@
 		F3627876264F0ECF001A2850 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3627875264F0ECF001A2850 /* LocationService.swift */; };
 		F3627880264F14CC001A2850 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F362787E264F14CC001A2850 /* InfoPlist.strings */; };
 		F3627886264F15B1001A2850 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3627885264F15B1001A2850 /* WeatherModel.swift */; };
+		F3634F2B26514587003A35D3 /* DetailViewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3634F2A26514587003A35D3 /* DetailViewTableCell.swift */; };
+		F393E65A26507067006A8E1E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F393E65926507067006A8E1E /* DetailViewController.swift */; };
+		F393E65E26507311006A8E1E /* DetailViewTableHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = F393E65D26507311006A8E1E /* DetailViewTableHead.swift */; };
 		F396A1662650071D00066D84 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396A1652650071D00066D84 /* WebService.swift */; };
 		F3D8B04F264EB24400740D42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B04E264EB24400740D42 /* AppDelegate.swift */; };
 		F3D8B051264EB24400740D42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B050264EB24400740D42 /* SceneDelegate.swift */; };
@@ -20,7 +23,7 @@
 		F3D8B070264EB52F00740D42 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B06F264EB52F00740D42 /* MapViewController.swift */; };
 		F3D8B073264EB55600740D42 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B072264EB55600740D42 /* SearchViewController.swift */; };
 		F3D8B076264EB57A00740D42 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B075264EB57A00740D42 /* FavoritesViewController.swift */; };
-		F3D8B07A264EB60600740D42 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B079264EB60600740D42 /* UIExtension.swift */; };
+		F3D8B07A264EB60600740D42 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B079264EB60600740D42 /* Extension.swift */; };
 		F3D8B081264EB91600740D42 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3D8B083264EB91600740D42 /* Localizable.strings */; };
 		F3D8B088264EB96B00740D42 /* LocalizableConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B087264EB96B00740D42 /* LocalizableConstants.swift */; };
 		F3D8B08B264EB99800740D42 /* LocalizationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D8B08A264EB99800740D42 /* LocalizationExtension.swift */; };
@@ -32,6 +35,9 @@
 		F3627882264F14EB001A2850 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F3627883264F14F9001A2850 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F3627885264F15B1001A2850 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		F3634F2A26514587003A35D3 /* DetailViewTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewTableCell.swift; sourceTree = "<group>"; };
+		F393E65926507067006A8E1E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F393E65D26507311006A8E1E /* DetailViewTableHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewTableHead.swift; sourceTree = "<group>"; };
 		F396A1652650071D00066D84 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		F3D8B04B264EB24400740D42 /* WeatherAndMapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAndMapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D8B04E264EB24400740D42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,7 +50,7 @@
 		F3D8B06F264EB52F00740D42 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F3D8B072264EB55600740D42 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		F3D8B075264EB57A00740D42 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
-		F3D8B079264EB60600740D42 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		F3D8B079264EB60600740D42 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		F3D8B082264EB91600740D42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F3D8B085264EB92C00740D42 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F3D8B087264EB96B00740D42 /* LocalizableConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableConstants.swift; sourceTree = "<group>"; };
@@ -109,6 +115,8 @@
 		F3D8B066264EB28F00740D42 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F393E65D26507311006A8E1E /* DetailViewTableHead.swift */,
+				F3634F2A26514587003A35D3 /* DetailViewTableCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -120,6 +128,7 @@
 				F3D8B06F264EB52F00740D42 /* MapViewController.swift */,
 				F3D8B072264EB55600740D42 /* SearchViewController.swift */,
 				F3D8B075264EB57A00740D42 /* FavoritesViewController.swift */,
+				F393E65926507067006A8E1E /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -136,7 +145,7 @@
 		F3D8B078264EB5EB00740D42 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				F3D8B079264EB60600740D42 /* UIExtension.swift */,
+				F3D8B079264EB60600740D42 /* Extension.swift */,
 				F3D8B08A264EB99800740D42 /* LocalizationExtension.swift */,
 			);
 			path = Extension;
@@ -224,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F393E65A26507067006A8E1E /* DetailViewController.swift in Sources */,
 				F396A1662650071D00066D84 /* WebService.swift in Sources */,
 				F3D8B073264EB55600740D42 /* SearchViewController.swift in Sources */,
 				F3D8B076264EB57A00740D42 /* FavoritesViewController.swift in Sources */,
@@ -235,7 +245,9 @@
 				F3D8B070264EB52F00740D42 /* MapViewController.swift in Sources */,
 				F3D8B051264EB24400740D42 /* SceneDelegate.swift in Sources */,
 				F3627886264F15B1001A2850 /* WeatherModel.swift in Sources */,
-				F3D8B07A264EB60600740D42 /* UIExtension.swift in Sources */,
+				F393E65E26507311006A8E1E /* DetailViewTableHead.swift in Sources */,
+				F3634F2B26514587003A35D3 /* DetailViewTableCell.swift in Sources */,
+				F3D8B07A264EB60600740D42 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

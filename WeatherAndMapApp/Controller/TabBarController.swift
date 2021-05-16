@@ -12,10 +12,7 @@ class TabBarController: UITabBarController {
     //MARK: - Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupUI()
-
-
     }
     
     //MARK: - UI methods
@@ -25,14 +22,20 @@ class TabBarController: UITabBarController {
         let searchViewController = SearchViewController()
         let favoritesViewController = FavoritesViewController()
         
+        let detailViewController = DetailViewController()//temp
+        
         // Nav Controllers
         let navMapController = UINavigationController()
         let navSearchController = UINavigationController()
         let navFavoritesController = UINavigationController()
         
+        let navDetailsController = UINavigationController()//temp
+        
         navMapController.viewControllers = [mapViewController]
         navSearchController.viewControllers = [searchViewController]
         navFavoritesController.viewControllers = [favoritesViewController]
+        
+        navDetailsController.viewControllers = [detailViewController]
         
         // Tab Bar Icons setup
         let mapSymbol = UIImage(systemName: "map")?.withTintColor(UIColor.Custom.gray!, renderingMode: .alwaysOriginal)
@@ -55,9 +58,10 @@ class TabBarController: UITabBarController {
         navMapController.tabBarItem = UITabBarItem(title: Localize.TabBar.Map, image: mapSymbol, selectedImage: mapSymbol?.withTintColor(UIColor.Custom.purple!))
         navSearchController.tabBarItem = UITabBarItem(title: Localize.TabBar.Search, image: searchSymbol, selectedImage: searchSymbol?.withTintColor(UIColor.Custom.purple!))
         navFavoritesController.tabBarItem = UITabBarItem(title: Localize.TabBar.Favorites, image: starSymbol, selectedImage: starSymbol?.withTintColor(UIColor.Custom.purple!))
+        navDetailsController.tabBarItem = UITabBarItem(title: Localize.TabBar.Favorites, image: starSymbol, selectedImage: starSymbol?.withTintColor(UIColor.Custom.purple!))
 
         // Add items to TabBar
-        let tabBarList = [navMapController,navSearchController,navFavoritesController]
+        let tabBarList = [navMapController,navSearchController,navFavoritesController,navDetailsController]
         self.setViewControllers(tabBarList, animated: false)
     }
 

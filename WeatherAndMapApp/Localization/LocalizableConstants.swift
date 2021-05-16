@@ -17,6 +17,9 @@ struct Localize {
         static let Standard = "Map.Standard".localized();
         static let Satellite = "Map.Satellite".localized();
     }
+    struct Detail {
+        static let FeelsLike = "Detail.FeelsLike".localized();
+    }
     struct Alert {
         static let Ok = "Alert.Ok".localized();
         static let UpdateSettings = "Alert.UpdateSettings".localized();

@@ -13,6 +13,8 @@
 "Map.Standard" = "Mapa";
 "Map.Satellite" = "Satelit";
 
+"Detail.FeelsLike" = "Pocitová teplota ";
+
 "Alert.Ok" = "Ok";
 "Alert.UpdateSettings" = "Aktualizovať nastavenia";
 "Alert.Location.Title" = "Lokalizačné služby sú vypnuté";

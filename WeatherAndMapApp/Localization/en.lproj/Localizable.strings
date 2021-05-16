@@ -13,6 +13,8 @@
 "Map.Standard" = "Standard";
 "Map.Satellite" = "Satellite";
 
+"Detail.FeelsLike" = "Feels like ";
+
 "Alert.Ok" = "Ok";
 "Alert.UpdateSettings" = "Update Settings";
 "Alert.Location.Title" = "Location Services off";

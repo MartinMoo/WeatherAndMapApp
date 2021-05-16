@@ -9,7 +9,7 @@ import UIKit
 import MapKit
 
 class MapViewController: UIViewController {
-    //MARK: - Properties
+    //MARK: - Private properties
     private let mapView = MKMapView()
     private let locationService = LocationService()
     private let zoomLevel: Double = 5000 // in meters: 5000  = 5x5km map zoom
